@@ -1,0 +1,221 @@
+.container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: Inter;
+    font-size: x-small;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    label {
+        font-weight: 500;
+        flex-grow: 1;
+
+        span {
+            color: red;
+        }
+    }
+}
+
+.titleContainer {
+    height: 15%;
+    margin-inline: 2vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5vh;
+
+    input {
+        height: 70%;
+        border: 2px solid #4D40551A;
+        border-radius: 0.2rem;
+        outline: none;
+        padding-inline: 1vw;
+    }
+
+    input::placeholder {
+        font-size: small;
+        color: #9B959F;
+        letter-spacing: 0.5px;
+    }
+}
+
+.priorityContainer {
+    height: 10%;
+    margin-inline: 2vw;
+    display: flex;
+    align-items: center;
+    column-gap: 1vw;
+
+}
+
+.priorityLabel {
+    width: 10vw;
+}
+
+.selectPriority {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5vw;
+}
+
+.priority {
+    font-size: xx-small;
+    color: #767575;
+    font-weight: 400;
+    height: 80%;
+    flex-grow: 1;
+    padding-inline: 0.5vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5vw;
+
+    border: 1px solid #E2E2E2;
+    border-radius: 0.4rem;
+    cursor: pointer;
+
+    img {
+        height: 1.5vh;
+    }
+}
+
+#selected {
+    background-color: #EEECEC;
+    border: none;
+}
+
+.checklistContainer {
+    height: 60%;
+    width: 100%;
+    padding-left: 2vw;
+}
+
+.checklistItems {
+    margin: 1vh 0;
+    max-height: 60%;
+    padding-right: 1.5vw;
+    overflow-y: auto;
+
+    img {
+        height: 2.5vh;
+    }
+}
+
+.checklistItems::-webkit-scrollbar {
+    width: 0.8vw;
+}
+
+.checklistItems::-webkit-scrollbar-track {
+    background: white;
+}
+
+.checklistItems::-webkit-scrollbar-thumb {
+    background: #9CB7C5;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
+.checklistItems::-webkit-scrollbar-button {
+    display: none;
+}
+
+.item {
+    border: 1px solid #E2E2E2;
+    border-radius: 0.5rem;
+    margin-bottom: 1vh;
+    padding-inline: 1vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    column-gap: 1vw;
+
+    input[type='checkbox'] {
+        width: 1vw;
+        aspect-ratio: 1;
+    }
+}
+
+.checklistCheckbox {
+    accent-color: #17A2B8;
+}
+
+.checklistName {
+    border: none;
+    outline: none;
+    width: 90%;
+}
+
+.addChecklistBtn {
+    background: none;
+    color: #767575;
+    cursor: pointer;
+    border: none;
+}
+
+.buttonContainer {
+    margin: 0 2vw;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.datePicker {
+    position: relative;
+    border: 1px solid #E2E2E2;
+    height: 100%;
+    width: 30%;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1vw;
+}
+
+
+.customDatePicker {
+    width: 100%;
+    height: 3vh;
+    border: none;
+    outline: none;
+    padding-inline: 2vw;
+    color: #707070;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.buttons {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center; 
+    column-gap: 2vw;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.cancelButton {
+    flex: 1;
+    height: 100%;
+    border: 2px solid #CF3636;
+    outline: none;
+    background: transparent;
+    color: #CF3636;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.submitButton{
+    flex: 1;
+    height: 100%;
+    background: #17A2B8;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;    
+    border-radius: 0.5rem;
+}

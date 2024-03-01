@@ -1,0 +1,154 @@
+.container {
+    /* border: 1px solid black; */
+    width: 85vw;
+    height: 100vh;
+    overflow-x: auto;
+}
+
+.topBar {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 2vw;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.header {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 10vh;
+    padding-inline: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Poppins;
+    font-size: 3.5vh;
+    font-weight: 500;
+}
+
+.selectContainer{
+    display: flex;
+    align-items: center;
+}
+
+.select{
+    font-family: Poppins;
+    outline: none;
+    border: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    height: 80vh;
+
+    /* border: 1px solid black; */
+    padding: 2vh 2vw;
+    column-gap: 2vw;
+
+}
+
+.menu::-webkit-scrollbar {
+    height: 2vh;
+}
+
+.menu::-webkit-scrollbar-track {
+    background: white;
+}
+
+.menu::-webkit-scrollbar-thumb {
+    background: #9CB7C5;
+    border: 3px solid white;
+    border-radius: 1rem;
+}
+
+.menu::-webkit-scrollbar-button {
+    display: none;
+}
+
+
+
+.board {
+    flex: 0 0 auto;
+    background-color: #EEF2F5;
+    width: 27%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    /* border: 1px solid red; */
+}
+
+.boardHeader {
+    /* border: 1px solid red; */
+    height: 10%;
+    width: 100%;
+    padding-inline: 1.5vw;
+    font-family: Poppins;
+    font-size: 2vh;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.collapseIcon {
+    height: 1.8vh;
+    cursor: pointer;
+}
+
+.addIcon {
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.todoTopbar {
+    /* border: 1px solid red; */
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tasksContainer {
+    /* border: 1px solid rgb(124, 1, 255); */
+    /* margin-top: 5%; */
+    height: 90%;
+    width: 100%;
+    padding: 1vh 1vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.tasksContainer::-webkit-scrollbar {
+    width: 1vw;
+}
+
+.tasksContainer::-webkit-scrollbar-track {
+    background: #EEF2F5;
+}
+
+.tasksContainer::-webkit-scrollbar-thumb {
+    background: #9CB7C5;
+    border: 3px solid #EEF2F5;
+    border-radius: 1rem;
+}
+
+.tasksContainer::-webkit-scrollbar-button {
+    display: none;
+}
+
+.customToastContainer{
+    width: 5vw;
+    height: 5vh;
+    background-color: green;
+    color: black;
+    border: 2px solid red;
+    text-align: center;
+}
