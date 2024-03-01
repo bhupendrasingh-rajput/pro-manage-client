@@ -65,7 +65,7 @@ const Task = ({ task, sectionToCollapse }) => {
 
 
     const handleShare = (taskId) => {
-        const taskDetailsLink = `https://pro-manage-server-0vrj.onrender.com/task-details/${taskId}`;
+        const taskDetailsLink = `https://pro-manage-client-five.vercel.app/task-details/${taskId}`;
 
         navigator.clipboard.writeText(taskDetailsLink)
             .then(() => {
